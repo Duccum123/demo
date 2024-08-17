@@ -139,7 +139,7 @@ html{
     margin-top: 46px;
     width: 100%;
     padding-top: 50%;
-    background: url('/assets/img/chicago.jpg') top center / cover no-repeat;
+    background: url('/demo/assets/img/chicago.jpg') top center / cover no-repeat;
 }
 
 .text-content {
@@ -225,7 +225,7 @@ html{
 .img {
     width: 155px;
     height: 155px;
-    background-image: url(/assets/img/bandmember.jpg);
+    background-image: url(/demo/assets/img/bandmember.jpg);
     background-size: cover;
     margin-bottom: 20px;
 }
@@ -290,15 +290,15 @@ html{
 }
 
 .section-buy-item-img1 {
-    background: url(/assets/img/newyork.jpg) top center / cover no-repeat;
+    background: url(/demo/assets/img/newyork.jpg) top center / cover no-repeat;
 }
 
 .section-buy-item-img2 {
-    background: url(/assets/img/paris.jpg) top center / cover no-repeat;
+    background: url(/demo/assets/img/paris.jpg) top center / cover no-repeat;
 }
 
 .section-buy-item-img3 {
-    background: url(/assets/img/sanfran.jpg) top center / cover no-repeat;
+    background: url(/demo/assets/img/sanfran.jpg) top center / cover no-repeat;
 }
 
 .section-buy-item-img {
@@ -397,7 +397,7 @@ html{
 
 .content-img {
     display: block;
-    background: url(/assets/img/map.jpg) top center / cover no-repeat;
+    background: url(/demo/assets/img/map.jpg) top center / cover no-repeat;
     width: 100%;
     padding-top: 56%;
     filter: grayscale(50%);
