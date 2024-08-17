@@ -1,0 +1,431 @@
+:root{
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --border-color: #bdbdbd;
+
+}
+
+*{
+    box-sizing: inherit;
+}
+
+.text-white {
+    color: var(--white-color);
+}
+.background-black {
+    background-color: var(--black-color);
+}
+
+.space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.margin-right-17px {
+    margin-right: 17px;
+}
+
+.margin-right-21_5px {
+    margin-right: 21.5px;
+}
+
+.float-right {
+    float: right;
+}
+
+html{
+    font-size: 62.5%; /* 1rem = 10px */
+    line-height: 1.6rem;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+#main {
+    display: block;
+}
+
+#header {
+    width: 100%;
+    height: 46px;
+    background-color: var(--black-color);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#header__list {
+    height: 100%;
+    width: 100%;
+}
+
+.header__item {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: var(--white-color);
+    line-height: 22px;
+    padding: 12px 24px;
+    display: inline-block;
+}
+
+.header__item:hover {
+    color: var(--black-color);
+    background-color: #ccc;
+}
+
+.header__more {
+    position: relative;
+    display: inline-block;
+    font-size: 1.6rem;
+    color: var(--white-color);
+    line-height: 22px;
+    padding: 12px 24px;
+    cursor: pointer;
+}
+
+.header__more:hover #header__more--show{
+    display: flex;
+}
+
+#header__more--show {
+    position: absolute;
+    background-color: var(--white-color);
+    display: none;
+    flex-direction: column;
+    left: 0;
+    top: 46px;
+    box-shadow: 0 -8px 104px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 160px;
+}
+
+.header__more-item {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: var(--black-color);
+    padding: 12px 24px;
+}
+
+.header__more-item:hover {
+    background-color: #ccc;
+}
+
+#menu-mobile-btn,
+#header__find {
+    color: var(--white-color);
+    font-size: 1.6rem;
+    padding: 12px 24px;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-mobile-btn:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+#header__find:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+#slider {
+    position: relative;
+    margin-top: 46px;
+    width: 100%;
+    padding-top: 50%;
+    background: url('/assets/img/chicago.jpg') top center / cover no-repeat;
+}
+
+.text-content {
+    position: absolute;
+    color: var(--white-color);
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.text-heading {
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.text-desc {
+    margin-top: 25px;
+    font-size: 1.5rem;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-wrap {
+    display: block;
+    width: 100%;
+}
+
+.content-section {
+    text-align: center;
+    width: 768px;
+    padding: 64px 16px;
+    margin: 0 auto;
+}
+
+.section-heading {
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 10px 0;
+    line-height: 4.5rem;
+    letter-spacing: 4px;
+}
+
+.section-sub-heading {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #747373;
+    margin: 15px 0;
+    line-height: 2.25rem;
+}
+
+.section-desc {
+    font-size: 1.45rem;
+    text-align: justify;
+    margin: 15px 0;
+    line-height: 2.25rem;
+}
+
+.section-img {
+    display: flex;
+    padding: 32px 0;
+    justify-content: space-between;
+}
+
+.section-img-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 256px;
+    
+}
+
+.section-img-text {
+    margin: 15px 0;
+    font-size: 1.6rem;
+}
+
+.img {
+    width: 155px;
+    height: 155px;
+    background-image: url(/assets/img/bandmember.jpg);
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.section-ticket-info {
+    padding: 0;
+    margin: 33px 0 0 0;
+}
+
+.section-info-item {
+    list-style: none;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    color: #747373;
+    background-color: var(--white-color);
+    padding: 8px 16px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.ticket-status--sold-out {
+    display: inline-block;
+    background-color: #f44336;
+    color: var(--white-color);
+    padding: 0 8px;
+    margin-left: 16px;
+    line-height: 22.5px;
+    user-select: none;
+}
+
+.ticket-status--sale {
+    display: inline-block;
+    padding: 0 8px;
+    margin-right: 16px;
+    line-height: 22.5px;
+    border-radius: 50%;
+    color: var(--white-color);
+    background-color: var(--black-color);
+    user-select: none;
+}
+
+.section-buy-ticket {
+    display: flex;
+    padding: 32px 0;
+    background-color: var(--black-color);
+}
+
+.section-buy-item {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white-color);
+    width: 33.333%;
+    margin: 0 8px;
+}
+
+.section-buy-item:first-child {
+    margin: 0 8px 0 0;
+}
+
+.section-buy-item:last-child {
+    margin: 0 0 0 8px;
+}
+
+.section-buy-item-img1 {
+    background: url(/assets/img/newyork.jpg) top center / cover no-repeat;
+}
+
+.section-buy-item-img2 {
+    background: url(/assets/img/paris.jpg) top center / cover no-repeat;
+}
+
+.section-buy-item-img3 {
+    background: url(/assets/img/sanfran.jpg) top center / cover no-repeat;
+}
+
+.section-buy-item-img {
+    height: 184px;
+    width: 100%;
+}
+
+.section-buy-item-img:hover {
+    filter: brightness(60%);
+}
+
+.section-buy-item-container {
+    text-align: left;
+    padding: 0 16px;
+}
+
+.section-buy-item-container-heading {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    color: var(--black-color);
+}
+
+.section-buy-item-container-time {
+    color: #747373;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+}
+
+.section-buy-item-container-content {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    color: var(--black-color);
+}
+
+.section-buy-btn {
+    color: var(--white-color);
+    background-color: var(--black-color);
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    width: fit-content;
+}
+
+.section-buy-btn:hover {
+    color: var(--black-color);
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.section-contact {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 32px 0;
+}
+
+.section-contact-output {
+    list-style: none;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    text-align: left;
+    margin: 0 0 16px 0;
+    padding: 0;
+    flex: 1;
+}
+
+.section-contact-input {
+    display: block;
+    flex: 1;
+
+}
+
+.input-half {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.input-half-item {
+    width: calc(50% - 8px);
+    font-size: 1.8rem;
+    line-height: 2.25rem;
+    padding: 8px 8px;
+    border: 1px solid #ccc;
+}
+
+.input-item {
+    width: 100%;
+    font-size: 1.8rem;
+    line-height: 2.25rem;
+    padding: 8px 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+}
+
+.content-img {
+    display: block;
+    background: url(/assets/img/map.jpg) top center / cover no-repeat;
+    width: 100%;
+    padding-top: 56%;
+    filter: grayscale(50%);
+}
+
+#footer {
+    width: 100%;
+    background-color: var(--white-color);
+    padding: 64px 16px;
+    text-align: center;
+}
+
+.footer-icon {
+    font-size: 2.4rem;
+    color: #747373;
+}
+
+.icon-item:hover {
+    color: #b9b4b4;
+}
+
+.footer-content {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    margin: 15px 0;
+    color: #747373;
+}
+
+.footer-link {
+    color: #747373;
+}
